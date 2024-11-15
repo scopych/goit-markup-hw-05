@@ -502,9 +502,27 @@
         <button type="button" class="modal-closebtn">X</button>
         <p class="modal-header">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <input class="modal-input"/>
-          <input class="modal-input"/>
-          <input class="modal-input"/>
+          <lable for="usr-name" class="modal-lable">Name</lable>
+          <div class="modal-input-wrap">
+            <input type="text" name="usr-name" class="modal-input" id="usr-name"/>
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </div>
+          <lable for="usr-tel" class="modal-lable">Phone</lable>
+          <div class="modal-input-wrap">
+            <input type="tel" name="usr-tel" class="modal-input" id="usr-tel"/>
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </div>
+          <lable for="usr-email" class="modal-lable">Email</lable>
+          <div class="modal-input-wrap">
+            <input type="email" name="usr-email" class="modal-input" id="usr-email"/>
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </div>
         </form>
       </div>
     </div>

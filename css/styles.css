@@ -500,8 +500,36 @@ advantages-item-icon {
 
 .modal-input {
   width: 100%;
-  border: 1px solid #4d5ae5;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
 }
+
+.modal-input:focus {
+   border: 1px solid #4d5ae5;
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+.modal-lable {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
