@@ -488,18 +488,52 @@ advantages-item-icon {
 }
 
 .modal-closebtn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
+  border-radius: 100%;
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+  margin-bottom: 24px;
 }
+
+.modal-closebtn:hover {
+	background-color: #404bbf;
+
+}
+
+
+.modal-closebtn-icon {
+	fill: #2e2f42;
+}
+
+.modal-closebtn-icon:hover {
+	fill: #fff;
+}
+
 
 .modal-header {
   font-weight: 500;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 
-.modal-input {
-  width: 100%;
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 16px;
+	ustify-content: center;
+	align-items: center;
+}
+
+.modal-input, .modal-textarea {
+  /*width: 100%;*/
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -533,3 +567,69 @@ advantages-item-icon {
   transform: translateY(-50%);
 }
 
+.modal-textarea {
+   height: 120px;
+}
+
+.modal-checkbox-wrap {
+	margin-bottom: 24px;
+}
+
+.modal-checkbox-lable {
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.04em;
+	color: #8e8f99;
+	display: flex;
+	align-items: center
+}
+
+.modal-checkbox:checked + .modal-checkbox-lable .modal-lable-span {
+	border-radius: 2px;
+	fill: #404bbf;
+	border: 1px solid #404bbf;
+	background-color: #404bbf;
+}
+
+.modal-link {
+	line-height: 1.33;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: #4d5ae5;
+}
+
+.modal-lable-span {
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 8px;
+	fill: transparent;
+}
+
+.modal-fake-check {
+	fill: #f4f4fd;
+}
+
+.modal-send-btn {
+	border-radius: 4px;
+	padding: 16px 32px;
+	width: 169px;
+	height: 56px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background: #4d5ae5;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #fff;
+
+ }
+
+ .modal-send-btn:hover {
+ 	background-color: #404bbf;
+ }
