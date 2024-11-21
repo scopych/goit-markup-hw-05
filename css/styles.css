@@ -198,7 +198,8 @@ img {
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.footer-btn:hover {
   background-color: #404bbf;
   cursor: pointer;
 }
@@ -361,8 +362,7 @@ advantages-item-icon {
   text-align: center;
 }
 
-.team-card-icons,
-.footer-icons {
+.team-card-icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,6 +406,9 @@ advantages-item-icon {
   text-transform: capitalize;
 }
 
+
+/* Footer */
+
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -413,7 +416,6 @@ advantages-item-icon {
 
 .footer-wrap {
   display: flex;
-  gap: 100px;
   align-items: baseline;
 }
 
@@ -437,10 +439,11 @@ advantages-item-icon {
 
 .footer-social {
   width: 208px;
-  height: 64px;
+  height: 80px;
+  margin-right: 80px;
 }
 
-.footer-social-header {
+.footer-social-header, .footer-subscribe-header {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -451,8 +454,11 @@ advantages-item-icon {
 }
 
 .footer-icons {
-  justify-content: left;
-  gap: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 16px;
 }
 
 
@@ -464,6 +470,55 @@ advantages-item-icon {
   background-color: #31d0aa;
 }
 
+.footer-subscribe {
+
+}
+
+.footer-subscribe-form {
+	display: flex;
+	gap: 24px;
+}
+
+.footer-email-input {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 264px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background: transparent;
+}
+
+.footer-email-input::placeholder {
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
+
+.footer-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 16px;
+	border-radius: 4px;
+	border: none;
+	padding: 8px 24px;
+	width: 165px;
+	height: 40px;
+	background: #4d5ae5;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #fff;
+
+}
+
+.footer-btn-icon {
+	fill: #fff;
+}
+
 /* Modal window */
 
 .backdrop {
@@ -472,7 +527,16 @@ advantages-item-icon {
   background-color: rgba(30, 24, 35, 0.6);
   width: 100%;
   height: 100%;
+  opacity: 0;
+ 	visibility: hidden;
+ 	pointer-events: none;
 }
+
+.is-open {
+ 	opacity: 1;
+ 	visibility: visible;
+ 	pointer-events: auto;
+ }
 
 .modal {
   width: 408px;
@@ -506,14 +570,14 @@ advantages-item-icon {
 
 }
 
-
 .modal-closebtn-icon {
 	fill: #2e2f42;
 }
 
-.modal-closebtn-icon:hover {
+.modal-closebtn-icon:hover  {
 	fill: #fff;
 }
+
 
 
 .modal-header {
@@ -633,3 +697,6 @@ advantages-item-icon {
  .modal-send-btn:hover {
  	background-color: #404bbf;
  }
+
+
+
