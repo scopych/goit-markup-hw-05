@@ -620,7 +620,7 @@ advantages-item-icon {
   fill: #4d5ae5;
 }
 
-.modal-lable {
+.modal-label {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
@@ -648,7 +648,7 @@ advantages-item-icon {
   margin-bottom: 24px;
 }
 
-.modal-checkbox-lable {
+.modal-checkbox-label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
@@ -657,7 +657,7 @@ advantages-item-icon {
   align-items: center;
 }
 
-.modal-checkbox:checked + .modal-checkbox-lable .modal-lable-span {
+.modal-checkbox:checked + .modal-checkbox-label .modal-label-span {
   border-radius: 2px;
   fill: #404bbf;
   border: 1px solid #404bbf;
@@ -671,7 +671,7 @@ advantages-item-icon {
   color: #4d5ae5;
 }
 
-.modal-lable-span {
+.modal-label-span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
