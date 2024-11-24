@@ -421,10 +421,11 @@ advantages-item-icon {
 .footer-wrap {
   display: flex;
   align-items: baseline;
+  justify-content: flex-end;
 }
 
 .footer-logo-block {
-  margin-right: 120px;
+  margin-right: auto;/* 120px;*/
 }
 
 .logo-link {
@@ -475,11 +476,13 @@ advantages-item-icon {
 }
 
 .footer-subscribe-label {
-  display: flex;
-  gap: 24px;
+ /* display: flex;
+  gap: 24px;*/
 }
 
 .footer-subscribe-form {
+	display: flex;
+  gap: 24px;
 }
 
 .footer-email-input {
