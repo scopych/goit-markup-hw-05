@@ -617,7 +617,7 @@ advantages-item-icon {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-  etter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 }
 
 .modal-form {
@@ -649,7 +649,7 @@ advantages-item-icon {
 }
 
 .modal-textarea {
-  width: 360px;
+  width: 100%;
   height: 120px;
   font-size: 12px;
   line-height: 1.17;
