@@ -425,7 +425,7 @@ advantages-item-icon {
 }
 
 .footer-logo-block {
-  margin-right: auto;/* 120px;*/
+  margin-right: auto;
 }
 
 .logo-link {
@@ -476,8 +476,7 @@ advantages-item-icon {
 }
 
 .footer-subscribe-label {
- /* display: flex;
-  gap: 24px;*/
+
 }
 
 .footer-subscribe-form {
@@ -500,9 +499,6 @@ advantages-item-icon {
 }
 
 .footer-email-input::placeholder {
-  /*  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;*/
   color: #fff;
 }
 
@@ -623,7 +619,6 @@ advantages-item-icon {
 .modal-form {
   display: flex;
   flex-direction: column;
-  /*gap: 8px;*/
   margin-bottom: 16px;
   justify-content: center;
   align-items: center;
@@ -707,12 +702,6 @@ advantages-item-icon {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  /*display: flex;
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 8px;*/
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .modal-label-span {
@@ -742,6 +731,7 @@ advantages-item-icon {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 8px;
 }
 
 .modal-fake-check {
