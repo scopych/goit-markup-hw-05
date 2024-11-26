@@ -734,7 +734,7 @@ advantages-item-icon {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
